@@ -7,18 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14A63711299BB05000DBB86A /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A63710299BB05000DBB86A /* CheckBox.swift */; };
+		14AC152B299375AC0077A5D4 /* ArtCultureScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AC152A299375AC0077A5D4 /* ArtCultureScreen.swift */; };
+		14AC152E299376100077A5D4 /* ShopDineScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AC152D299376100077A5D4 /* ShopDineScreen.swift */; };
 		14C84D492971424F0097DA98 /* TripPlannerDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C84D482971424F0097DA98 /* TripPlannerDemoApp.swift */; };
-		14C84D4B2971424F0097DA98 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C84D4A2971424F0097DA98 /* ContentView.swift */; };
 		14C84D4D297142500097DA98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14C84D4C297142500097DA98 /* Assets.xcassets */; };
 		14C84D50297142500097DA98 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14C84D4F297142500097DA98 /* Preview Assets.xcassets */; };
+		14D26579298FD7CA0051D011 /* View+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D26578298FD7CA0051D011 /* View+.swift */; };
+		14D2657B298FD8D60051D011 /* Image+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D2657A298FD8D60051D011 /* Image+.swift */; };
+		14D2657D29911DF00051D011 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D2657C29911DF00051D011 /* TabBar.swift */; };
+		14E56E69298A42C50060D87B /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E56E68298A42C50060D87B /* HomeScreen.swift */; };
+		14E78A3829954CD40071FD9D /* DetailsStepsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E78A3729954CD40071FD9D /* DetailsStepsScreen.swift */; };
+		14E78A3C299950670071FD9D /* Splitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E78A3B299950670071FD9D /* Splitter.swift */; };
+		14E78A3E299951700071FD9D /* ShopCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E78A3D299951700071FD9D /* ShopCard.swift */; };
+		14E78A422999520C0071FD9D /* ShopCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E78A412999520C0071FD9D /* ShopCardModel.swift */; };
+		14E78A45299954170071FD9D /* DetailsEditModeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E78A44299954170071FD9D /* DetailsEditModeScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		14A63710299BB05000DBB86A /* CheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
+		14AC152A299375AC0077A5D4 /* ArtCultureScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtCultureScreen.swift; sourceTree = "<group>"; };
+		14AC152D299376100077A5D4 /* ShopDineScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopDineScreen.swift; sourceTree = "<group>"; };
 		14C84D452971424F0097DA98 /* TripPlannerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TripPlannerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14C84D482971424F0097DA98 /* TripPlannerDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripPlannerDemoApp.swift; sourceTree = "<group>"; };
-		14C84D4A2971424F0097DA98 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		14C84D4C297142500097DA98 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		14C84D4F297142500097DA98 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		14D26578298FD7CA0051D011 /* View+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+.swift"; sourceTree = "<group>"; };
+		14D2657A298FD8D60051D011 /* Image+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+.swift"; sourceTree = "<group>"; };
+		14D2657C29911DF00051D011 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		14E56E68298A42C50060D87B /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		14E78A3729954CD40071FD9D /* DetailsStepsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsStepsScreen.swift; sourceTree = "<group>"; };
+		14E78A3B299950670071FD9D /* Splitter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Splitter.swift; sourceTree = "<group>"; };
+		14E78A3D299951700071FD9D /* ShopCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopCard.swift; sourceTree = "<group>"; };
+		14E78A412999520C0071FD9D /* ShopCardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopCardModel.swift; sourceTree = "<group>"; };
+		14E78A44299954170071FD9D /* DetailsEditModeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsEditModeScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +54,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		14AC1529299375800077A5D4 /* ArtCultureScreen */ = {
+			isa = PBXGroup;
+			children = (
+				14AC152A299375AC0077A5D4 /* ArtCultureScreen.swift */,
+			);
+			path = ArtCultureScreen;
+			sourceTree = "<group>";
+		};
+		14AC152C299375EC0077A5D4 /* ShopDineScreen */ = {
+			isa = PBXGroup;
+			children = (
+				14AC152D299376100077A5D4 /* ShopDineScreen.swift */,
+			);
+			path = ShopDineScreen;
+			sourceTree = "<group>";
+		};
+		14C1B9692973A39100DC5E88 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				14D2657C29911DF00051D011 /* TabBar.swift */,
+				14E78A3B299950670071FD9D /* Splitter.swift */,
+				14E78A3D299951700071FD9D /* ShopCard.swift */,
+				14A63710299BB05000DBB86A /* CheckBox.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		14C1B96A2973A3AC00DC5E88 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				14E78A412999520C0071FD9D /* ShopCardModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		14C1B96B2973A3BA00DC5E88 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				14C84D4C297142500097DA98 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		14C84D3C2971424F0097DA98 = {
 			isa = PBXGroup;
 			children = (
@@ -51,9 +116,13 @@
 		14C84D472971424F0097DA98 /* TripPlannerDemo */ = {
 			isa = PBXGroup;
 			children = (
+				14D83424298E454300A9058C /* Screen */,
+				14D8341F298BB58600A9058C /* Extension */,
+				14C1B96A2973A3AC00DC5E88 /* Model */,
+				14C1B9692973A39100DC5E88 /* Views */,
+				14C1B96B2973A3BA00DC5E88 /* Resources */,
+				14D83425298E45D700A9058C /* Utils */,
 				14C84D482971424F0097DA98 /* TripPlannerDemoApp.swift */,
-				14C84D4A2971424F0097DA98 /* ContentView.swift */,
-				14C84D4C297142500097DA98 /* Assets.xcassets */,
 				14C84D4E297142500097DA98 /* Preview Content */,
 			);
 			path = TripPlannerDemo;
@@ -65,6 +134,50 @@
 				14C84D4F297142500097DA98 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		14D8341F298BB58600A9058C /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				14D26578298FD7CA0051D011 /* View+.swift */,
+				14D2657A298FD8D60051D011 /* Image+.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		14D83424298E454300A9058C /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				14E78A43299953A50071FD9D /* DetailsEditModeScreen */,
+				14E78A3629954CAA0071FD9D /* DetailsStepsScreen */,
+				14AC152C299375EC0077A5D4 /* ShopDineScreen */,
+				14AC1529299375800077A5D4 /* ArtCultureScreen */,
+				14E56E68298A42C50060D87B /* HomeScreen.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		14D83425298E45D700A9058C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		14E78A3629954CAA0071FD9D /* DetailsStepsScreen */ = {
+			isa = PBXGroup;
+			children = (
+				14E78A3729954CD40071FD9D /* DetailsStepsScreen.swift */,
+			);
+			path = DetailsStepsScreen;
+			sourceTree = "<group>";
+		};
+		14E78A43299953A50071FD9D /* DetailsEditModeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				14E78A44299954170071FD9D /* DetailsEditModeScreen.swift */,
+			);
+			path = DetailsEditModeScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +250,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14C84D4B2971424F0097DA98 /* ContentView.swift in Sources */,
+				14E78A3829954CD40071FD9D /* DetailsStepsScreen.swift in Sources */,
+				14AC152B299375AC0077A5D4 /* ArtCultureScreen.swift in Sources */,
+				14D26579298FD7CA0051D011 /* View+.swift in Sources */,
+				14E78A422999520C0071FD9D /* ShopCardModel.swift in Sources */,
+				14D2657B298FD8D60051D011 /* Image+.swift in Sources */,
+				14E78A45299954170071FD9D /* DetailsEditModeScreen.swift in Sources */,
 				14C84D492971424F0097DA98 /* TripPlannerDemoApp.swift in Sources */,
+				14E78A3E299951700071FD9D /* ShopCard.swift in Sources */,
+				14E56E69298A42C50060D87B /* HomeScreen.swift in Sources */,
+				14D2657D29911DF00051D011 /* TabBar.swift in Sources */,
+				14E78A3C299950670071FD9D /* Splitter.swift in Sources */,
+				14A63711299BB05000DBB86A /* CheckBox.swift in Sources */,
+				14AC152E299376100077A5D4 /* ShopDineScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,7 +320,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -251,7 +375,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -272,12 +396,13 @@
 				DEVELOPMENT_TEAM = 8868FL3B64;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = TripPlannerDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,12 +427,13 @@
 				DEVELOPMENT_TEAM = 8868FL3B64;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = TripPlannerDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

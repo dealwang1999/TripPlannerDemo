@@ -2,7 +2,7 @@
 //  TripPlannerDemoApp.swift
 //  TripPlannerDemo
 //
-//  Created by dealwang on 2023/1/13.
+//  Created by dealwang on 2023/2/2.
 //
 
 import SwiftUI
@@ -11,7 +11,7 @@ import SwiftUI
 struct TripPlannerDemoApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeScreen()
         }
     }
 }
