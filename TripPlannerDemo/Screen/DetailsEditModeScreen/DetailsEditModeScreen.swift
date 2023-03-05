@@ -12,8 +12,8 @@ struct DetailsEditModeScreen: View {
     @Binding var shopList: [ShopCardModel]
     @State var checkList: Set<ShopCardModel.ID>
 
-    var isExist: Bool {
-        checkList.count > 0
+    var disabled: Bool {
+        !(checkList.count > 0)
     }
 
     var body: some View {
@@ -61,9 +61,9 @@ struct DetailsEditModeScreen: View {
             Button("CANCEL") {
                 checkList = Set(shopList.filter(\.isCheck).map(\.id))
             }
-                .font(.footnote)
-                .foregroundColor(.black)
-                .fontWeight(.medium)
+            .font(.footnote)
+            .foregroundColor(.black)
+            .fontWeight(.medium)
         }
     }
 
@@ -88,27 +88,15 @@ struct DetailsEditModeScreen: View {
 
     func bottomButton() -> some View {
         HStack {
-            Button {
+            MyButton(label: "Done", disabled: disabled) {
                 shopList = shopList.map { item in
                     var newItem = item
                     newItem.isCheck = checkList.contains(item.id)
                     return newItem
                 }
                 dismiss()
-            } label: {
-                Text("Done")
-                    .font(.subheadline)
-                    .fontWeight(.bold)
-                    .foregroundColor(.white)
-                    .frame(maxWidth: .infinity)
-                    .padding(.vertical, 14)
-                    .background {
-                        RoundedRectangle(cornerRadius: 9999).foregroundColor(Color("secondary")).opacity(isExist ? 1 : 0.5)
-                    }
-                    .cornerRadius(9999)
             }
         }
-        .disabled(!isExist)
         .padding(.horizontal, 20)
     }
 }

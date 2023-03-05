@@ -2,54 +2,41 @@
 //  MyButton.swift
 //  TripPlannerDemo
 //
-//  Created by dealwang on 2023/2/17.
+//  Created by dealwang on 2023/3/5.
 //
 
 import SwiftUI
 
 struct MyButton: View {
-    var action: () -> Void
-    @State var disabled: Bool
+    let label: String
+    let disabled: Bool
+    let action: () -> Void
+
 
     var body: some View {
-        VStack {
-//            Button(action: action) {
-//                Text("\(disabled.description)")
-//                    .font(.subheadline)
-//                    .fontWeight(.bold)
-//                    .foregroundColor(.white)
-//                    .frame(maxWidth: .infinity)
-//                    .padding(.vertical, 14)
-//                    .background {
-//                        RoundedRectangle(cornerRadius: 9999).foregroundColor(Color("secondary")).opacity(disabled ? 0.5 : 1)
-//                    }
-//            }.disabled(disabled)
-
-            if disabled {
-                Color.gray // true
-            } else {
-                Color.red // false
-            }
-        }
-    }
-
-    func disabled(_ disabled: Bool) -> some View {
-        self.disabled = disabled
-        return self
+        Button(action: action) {
+            Text(label)
+                .font(.subheadline)
+                .fontWeight(.bold)
+                .foregroundColor(.white)
+                .frame(maxWidth: .infinity)
+                .padding(.vertical, 14)
+                .background(Color("secondary").opacity(disabled ? 0.5 : 1))
+                .clipShape(Capsule())
+        }.disabled(disabled)
     }
 }
 
 extension MyButton {
-    init(action: @escaping () -> Void) {
+    init(label: String, action: @escaping () -> Void) {
+        self.label = label
         self.action = action
-        self._disabled = .init(wrappedValue: false)
+        self.disabled = false
     }
 }
 
 struct MyButton_Previews: PreviewProvider {
     static var previews: some View {
-        MyButton {
-            print("")
-        }.disabled(true)
+        MyButton(label: "Start navigation") {}
     }
 }

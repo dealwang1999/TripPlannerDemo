@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1473FC1C29B4A17000AABBF3 /* MyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1473FC1B29B4A17000AABBF3 /* MyButton.swift */; };
 		14A63711299BB05000DBB86A /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A63710299BB05000DBB86A /* CheckBox.swift */; };
 		14AC152B299375AC0077A5D4 /* ArtCultureScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AC152A299375AC0077A5D4 /* ArtCultureScreen.swift */; };
 		14AC152E299376100077A5D4 /* ShopDineScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AC152D299376100077A5D4 /* ShopDineScreen.swift */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1473FC1B29B4A17000AABBF3 /* MyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyButton.swift; sourceTree = "<group>"; };
 		14A63710299BB05000DBB86A /* CheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
 		14AC152A299375AC0077A5D4 /* ArtCultureScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtCultureScreen.swift; sourceTree = "<group>"; };
 		14AC152D299376100077A5D4 /* ShopDineScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopDineScreen.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 				14E78A3B299950670071FD9D /* Splitter.swift */,
 				14E78A3D299951700071FD9D /* ShopCard.swift */,
 				14A63710299BB05000DBB86A /* CheckBox.swift */,
+				1473FC1B29B4A17000AABBF3 /* MyButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -251,6 +254,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				14E78A3829954CD40071FD9D /* DetailsStepsScreen.swift in Sources */,
+				1473FC1C29B4A17000AABBF3 /* MyButton.swift in Sources */,
 				14AC152B299375AC0077A5D4 /* ArtCultureScreen.swift in Sources */,
 				14D26579298FD7CA0051D011 /* View+.swift in Sources */,
 				14E78A422999520C0071FD9D /* ShopCardModel.swift in Sources */,

@@ -60,19 +60,8 @@ struct DetailsStepsScreen: View {
 
     private func startNavigationButton() -> some View {
         HStack {
-            Button {
+            MyButton(label: "Start navigation") {
                 print("")
-            } label: {
-                Text("Start navigation")
-                    .font(.subheadline)
-                    .fontWeight(.bold)
-                    .foregroundColor(.white)
-                    .frame(maxWidth: .infinity)
-                    .padding(.vertical, 14)
-                    .background {
-                        RoundedRectangle(cornerRadius: 9999).foregroundColor(Color("secondary"))
-                    }
-                    .cornerRadius(9999)
             }
         }.padding(.horizontal, 20)
     }
