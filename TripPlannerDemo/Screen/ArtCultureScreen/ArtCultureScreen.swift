@@ -20,13 +20,32 @@ private struct FeatureTours: Identifiable {
         FeatureTours(iamgeUrl: "group01", title: "Food Story of Hong Kong", description: "2 hours • 4 stops"),
         FeatureTours(iamgeUrl: "group02", title: "Hong Kong with Gusto ", description: "3 hours • 4 stops"),
     ]
+
+    static func adapter(_ data: CommonModel.Welcome) -> [FeatureTours] {
+        let formatDate = { startTimeInterval, endTimeInterval in
+            let startData = Date(timeIntervalSince1970: TimeInterval(startTimeInterval / 1000))
+            let endData = Date(timeIntervalSince1970: TimeInterval(endTimeInterval / 1000))
+            return DataUtil.calculateTimeBetweenDates(startDate: startData, endDate: endData)
+        }
+
+        return data.tripTour.map { item in
+            FeatureTours(iamgeUrl: item.image.fullName, title: item.langMap.first?.descr ?? "", description: "\(formatDate(item.periodStartTime, item.periodEndTime)) • \(item.langMap.count) stops")
+        }
+    }
 }
 
 struct ArtCultureScreen: View {
     @State var shouldShowTimeSheet = false
     @State var shouldShowAreaSheet = false
+    @StateObject private var commonData = CommonViewModel()
 
     var body: some View {
+        if commonData.isSucces {
+            renderBody()
+        }
+    }
+
+    func renderBody() -> some View {
         ScrollView {
             HStack {
                 drowButton(action: {
@@ -46,8 +65,8 @@ struct ArtCultureScreen: View {
                 Spacer()
             }
             ScrollView(.horizontal) {
-                LazyHStack {
-                    ForEach(FeatureTours.examples) { item in
+                HStack {
+                    ForEach(FeatureTours.adapter(commonData.data!)) { item in
                         featureItem(item)
                     }
                 }
@@ -94,8 +113,7 @@ struct ArtCultureScreen: View {
             DetailsStepsScreen()
         }) {
             VStack(alignment: .leading) {
-                Image(item.iamgeUrl)
-                    .resizable()
+                AsyncImage(url: URL(string: item.iamgeUrl))
                     .frame(width: 263, height: 400)
                     .cornerRadius(10)
                 Text(item.title)
@@ -109,7 +127,7 @@ struct ArtCultureScreen: View {
                     Text(item.description).foregroundColor(Color("home.feature.description"))
                         .font(.footnote)
                 }.offset(y: -8)
-            }
+            }.frame(width: 263)
         }
     }
 }

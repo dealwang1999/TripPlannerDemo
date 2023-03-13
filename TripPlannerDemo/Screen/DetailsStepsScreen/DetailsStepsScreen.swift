@@ -105,7 +105,7 @@ struct DetailsStepsScreen: View {
         HStack(spacing: 13) {
             VStack(spacing: 0) {
                 Color.clear.frame(width: 1).overlay {
-                    Rectangle().strokeBorder(style: .init(lineWidth: 1, dash: [2])).foregroundColor(Color("primary"))
+                    Rectangle().strokeBorder(style: .init(lineWidth: 1, dash: [2, 5])).foregroundColor(Color("primary"))
                 }.hidden(index == 0)
                 Text((index + 1).description)
                     .foregroundColor(.white)
@@ -113,11 +113,12 @@ struct DetailsStepsScreen: View {
                     .padding(.vertical, 3)
                     .font(.footnote)
                     .frame(minWidth: 22)
+                    .clipShape(Capsule())
                     .background {
                         RoundedRectangle(cornerRadius: 9999).foregroundColor(Color("primary"))
                     }
                 Color.clear.frame(width: 1).overlay {
-                    Rectangle().strokeBorder(style: .init(lineWidth: 1, dash: [2])).foregroundColor(Color("primary"))
+                    Rectangle().strokeBorder(style: .init(lineWidth: 1, dash: [2, 5])).foregroundColor(Color("primary"))
                 }.hidden(index == shouldShowShopList.count - 1)
             }
             Button(action: action) {

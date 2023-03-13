@@ -5,6 +5,7 @@
 //  Created by dealwang on 2023/2/5.
 //
 
+import Alamofire
 import SwiftUI
 
 struct HomeScreen: View {
